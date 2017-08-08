@@ -101,7 +101,6 @@ class Swiftris {
         }
         
         shape.lowerShapeByOneRow()
-        
         if detectIllegalPlacement() {
             shape.raiseShapeByOneRow()
             if detectIllegalPlacement() {
@@ -193,7 +192,8 @@ class Swiftris {
         delegate?.gameDidEnd(swiftris: self)
     }
     
-    func removeCompleteLines() -> (linesRemoved: Array<Array<Block>>, fallenBlock: Array<Array<Block>>) {
+    func removeCompleteLines() -> (linesRemoved: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>)
+    {
         var removedLines = Array<Array<Block>>()
         
         for row in (1..<NumRows).reversed() {
@@ -208,7 +208,6 @@ class Swiftris {
             
             if rowOfBlocks.count == NumColumns {
                 removedLines.append(rowOfBlocks)
-                
                 for block in rowOfBlocks {
                     blockArray[block.column, block.row] = nil
                 }
