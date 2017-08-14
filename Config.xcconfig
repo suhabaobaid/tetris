@@ -1,0 +1,9 @@
+//
+//  Config.xcconfig
+//  swiftris
+//
+//  Created by Suha Baobaid on 14/08/2017.
+//  Copyright © 2017 Suha Baobaid. All rights reserved.
+//
+
+BUNDLE_ID =  suha.swiftris

@@ -33,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A2DDF931F421DCE00FCE3D4 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		1A3939FC1F2A5B040003B307 /* swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3939FF1F2A5B040003B307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A393A051F2A5B040003B307 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 			children = (
 				1A3939FE1F2A5B040003B307 /* swiftris */,
 				1A3939FD1F2A5B040003B307 /* Products */,
+				1A2DDF931F421DCE00FCE3D4 /* Config.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,6 +256,7 @@
 /* Begin XCBuildConfiguration section */
 		1A393A121F2A5B040003B307 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2DDF931F421DCE00FCE3D4 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -304,6 +307,7 @@
 		};
 		1A393A131F2A5B040003B307 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2DDF931F421DCE00FCE3D4 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
