@@ -58,6 +58,7 @@
 		1AAE07E31F2BB36A002E9670 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
 		1AAE07E51F2BB471002E9670 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
 		1AAE07E71F2BB80D002E9670 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
+		DF3774AE1F421CE900E9EE5B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		1A3939F31F2A5B040003B307 = {
 			isa = PBXGroup;
 			children = (
+				DF3774AE1F421CE900E9EE5B /* Debug.xcconfig */,
 				1A3939FE1F2A5B040003B307 /* swiftris */,
 				1A3939FD1F2A5B040003B307 /* Products */,
 			);
@@ -166,7 +168,7 @@
 				TargetAttributes = {
 					1A3939FB1F2A5B040003B307 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = A688WWGM8A;
+						DevelopmentTeam = S5LE5TDLUP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -254,6 +256,7 @@
 /* Begin XCBuildConfiguration section */
 		1A393A121F2A5B040003B307 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3774AE1F421CE900E9EE5B /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -304,6 +307,7 @@
 		};
 		1A393A131F2A5B040003B307 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3774AE1F421CE900E9EE5B /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -349,11 +353,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A688WWGM8A;
+				DEVELOPMENT_TEAM = S5LE5TDLUP;
 				INFOPLIST_FILE = swiftris/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = suha.swiftris;
+				PRODUCT_BUNDLE_IDENTIFIER = mustii.swiftris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -363,11 +367,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A688WWGM8A;
+				DEVELOPMENT_TEAM = S5LE5TDLUP;
 				INFOPLIST_FILE = swiftris/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = suha.swiftris;
+				PRODUCT_BUNDLE_IDENTIFIER = mustii.swiftris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
