@@ -1,9 +1,0 @@
-//
-//  Debug.xcconfig
-//  swiftris
-//
-//  Created by Mustafa Khalil on 8/14/17.
-//  Copyright © 2017 Suha Baobaid. All rights reserved.
-//
-
-BUNDLE_ID = mustii.swiftris
