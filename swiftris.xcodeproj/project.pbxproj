@@ -62,7 +62,7 @@
 		3E5EC2C90B93C3CD3822EC92 /* Pods-swiftris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.debug.xcconfig"; sourceTree = "<group>"; };
 		40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A455A87785218022008F2430 /* Pods-swiftris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.release.xcconfig"; sourceTree = "<group>"; };
-		DF3774AE1F421CE900E9EE5B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		DF3774AE1F421CE900E9EE5B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		1A3939F31F2A5B040003B307 = {
 			isa = PBXGroup;
 			children = (
-				DF3774AE1F421CE900E9EE5B /* Debug.xcconfig */,
+				DF3774AE1F421CE900E9EE5B /* Config.xcconfig */,
 				1A3939FE1F2A5B040003B307 /* swiftris */,
 				1A3939FD1F2A5B040003B307 /* Products */,
 				8858C460A12A3E210CFEA527 /* Pods */,
@@ -337,6 +337,7 @@
 /* Begin XCBuildConfiguration section */
 		1A393A121F2A5B040003B307 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3774AE1F421CE900E9EE5B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -387,6 +388,7 @@
 		};
 		1A393A131F2A5B040003B307 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3774AE1F421CE900E9EE5B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
