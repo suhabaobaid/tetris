@@ -30,10 +30,10 @@
 		1AAE07E41F2BB36A002E9670 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07E31F2BB36A002E9670 /* SShape.swift */; };
 		1AAE07E61F2BB471002E9670 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07E51F2BB471002E9670 /* ZShape.swift */; };
 		1AAE07E81F2BB80D002E9670 /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07E71F2BB80D002E9670 /* Swiftris.swift */; };
+		74E167C53FDD7ACFB0E04B75 /* Pods_swiftris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A2DDF931F421DCE00FCE3D4 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		1A3939FC1F2A5B040003B307 /* swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3939FF1F2A5B040003B307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A393A051F2A5B040003B307 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -59,6 +59,10 @@
 		1AAE07E31F2BB36A002E9670 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
 		1AAE07E51F2BB471002E9670 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
 		1AAE07E71F2BB80D002E9670 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
+		3E5EC2C90B93C3CD3822EC92 /* Pods-swiftris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.debug.xcconfig"; sourceTree = "<group>"; };
+		40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A455A87785218022008F2430 /* Pods-swiftris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.release.xcconfig"; sourceTree = "<group>"; };
+		DF3774AE1F421CE900E9EE5B /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E167C53FDD7ACFB0E04B75 /* Pods_swiftris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +80,11 @@
 		1A3939F31F2A5B040003B307 = {
 			isa = PBXGroup;
 			children = (
+				DF3774AE1F421CE900E9EE5B /* Config.xcconfig */,
 				1A3939FE1F2A5B040003B307 /* swiftris */,
 				1A3939FD1F2A5B040003B307 /* Products */,
-				1A2DDF931F421DCE00FCE3D4 /* Config.xcconfig */,
+				8858C460A12A3E210CFEA527 /* Pods */,
+				44464EA9D450FE0FF0DC70C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +143,23 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		44464EA9D450FE0FF0DC70C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8858C460A12A3E210CFEA527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E5EC2C90B93C3CD3822EC92 /* Pods-swiftris.debug.xcconfig */,
+				A455A87785218022008F2430 /* Pods-swiftris.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A393A141F2A5B040003B307 /* Build configuration list for PBXNativeTarget "swiftris" */;
 			buildPhases = (
+				32F97ABE8BE0286D9D5D54C0 /* [CP] Check Pods Manifest.lock */,
 				1A3939F81F2A5B040003B307 /* Sources */,
 				1A3939F91F2A5B040003B307 /* Frameworks */,
 				1A3939FA1F2A5B040003B307 /* Resources */,
+				704F54F76D97D2F8891381BA /* [CP] Embed Pods Frameworks */,
+				14FD1A1585171C55AF790780 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +237,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14FD1A1585171C55AF790780 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftris/Pods-swiftris-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32F97ABE8BE0286D9D5D54C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftris-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		704F54F76D97D2F8891381BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swiftris/Pods-swiftris-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftris/Pods-swiftris-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A3939F81F2A5B040003B307 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,7 +337,7 @@
 /* Begin XCBuildConfiguration section */
 		1A393A121F2A5B040003B307 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A2DDF931F421DCE00FCE3D4 /* Config.xcconfig */;
+			baseConfigurationReference = DF3774AE1F421CE900E9EE5B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -307,7 +388,7 @@
 		};
 		1A393A131F2A5B040003B307 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A2DDF931F421DCE00FCE3D4 /* Config.xcconfig */;
+			baseConfigurationReference = DF3774AE1F421CE900E9EE5B /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -351,6 +432,7 @@
 		};
 		1A393A151F2A5B040003B307 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5EC2C90B93C3CD3822EC92 /* Pods-swiftris.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A688WWGM8A;
@@ -365,6 +447,7 @@
 		};
 		1A393A161F2A5B040003B307 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A455A87785218022008F2430 /* Pods-swiftris.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A688WWGM8A;
