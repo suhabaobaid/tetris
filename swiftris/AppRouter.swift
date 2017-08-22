@@ -20,7 +20,6 @@ final class AppRouter{
     init(window: UIWindow) {
         navigationController = UINavigationController()
         window.rootViewController = navigationController
-        
         store.subscribe(self){
             subscription in subscription.select {
                 state in state.routingState
@@ -29,12 +28,14 @@ final class AppRouter{
     }
     
     fileprivate func pushViewController(identifier: String, animated: Bool) {
+        
         let viewController = instantiateViewController(identifier: identifier)
         navigationController.pushViewController((viewController), animated: animated)
     }
     
     fileprivate func instantiateViewController(identifier: String) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         return storyboard.instantiateViewController(withIdentifier: identifier)
     }
     

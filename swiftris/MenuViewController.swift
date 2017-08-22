@@ -15,7 +15,6 @@ final class MenuViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         store.subscribe(self){
             subscription in subscription.select {
                 state in state.menuState
