@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import ReSwift
 
 class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognizerDelegate {
 
@@ -18,6 +19,10 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -168,3 +173,4 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         scene.redrawShape(shape: swiftris.fallingShape!) {}
     }
 }
+

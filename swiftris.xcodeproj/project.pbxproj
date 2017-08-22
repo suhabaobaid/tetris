@@ -40,6 +40,7 @@
 		1AAE07E81F2BB80D002E9670 /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07E71F2BB80D002E9670 /* Swiftris.swift */; };
 		1AC991D61F4C05450087BF76 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D51F4C05450087BF76 /* TableDataSource.swift */; };
 		1AC991D81F4CA8890087BF76 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D71F4CA8890087BF76 /* CollectionDataSource.swift */; };
+		1AC991DA1F4CAA780087BF76 /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D91F4CAA780087BF76 /* RoutingAction.swift */; };
 		74E167C53FDD7ACFB0E04B75 /* Pods_swiftris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		1AAE07E71F2BB80D002E9670 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
 		1AC991D51F4C05450087BF76 /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		1AC991D71F4CA8890087BF76 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		1AC991D91F4CAA780087BF76 /* RoutingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
 		3E5EC2C90B93C3CD3822EC92 /* Pods-swiftris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.debug.xcconfig"; sourceTree = "<group>"; };
 		40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A455A87785218022008F2430 /* Pods-swiftris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		1A3939FE1F2A5B040003B307 /* swiftris */ = {
 			isa = PBXGroup;
 			children = (
+				1AC991DB1F4CB1680087BF76 /* Utils */,
 				1AC991D41F4C05320087BF76 /* DataSources */,
 				1AC991D31F4C03970087BF76 /* Shapes */,
 				1AC991D21F4C03740087BF76 /* ViewControllers */,
@@ -134,9 +137,6 @@
 				1A393A231F2A5EB70003B307 /* Sprites.atlas */,
 				1A393A181F2A5E910003B307 /* Sounds */,
 				1A393A171F2A5DF40003B307 /* Supporting Files */,
-				1A393A321F2A66040003B307 /* Array2D.swift */,
-				1A393A341F2A6F730003B307 /* Bloc.swift */,
-				1AAE07E71F2BB80D002E9670 /* Swiftris.swift */,
 				1A0D77B51F4B4F37005FF908 /* AppRouter.swift */,
 			);
 			path = swiftris;
@@ -164,6 +164,7 @@
 		1AC991CF1F4C02FB0087BF76 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				1AC991D91F4CAA780087BF76 /* RoutingAction.swift */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -219,6 +220,16 @@
 				1AC991D71F4CA8890087BF76 /* CollectionDataSource.swift */,
 			);
 			name = DataSources;
+			sourceTree = "<group>";
+		};
+		1AC991DB1F4CB1680087BF76 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE07E71F2BB80D002E9670 /* Swiftris.swift */,
+				1A393A321F2A66040003B307 /* Array2D.swift */,
+				1A393A341F2A6F730003B307 /* Bloc.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		44464EA9D450FE0FF0DC70C1 /* Frameworks */ = {
@@ -394,6 +405,7 @@
 				1A0D77B41F4B4DCD005FF908 /* AppState.swift in Sources */,
 				1A393A351F2A6F730003B307 /* Bloc.swift in Sources */,
 				1A393A081F2A5B040003B307 /* GameViewController.swift in Sources */,
+				1AC991DA1F4CAA780087BF76 /* RoutingAction.swift in Sources */,
 				1AC991D81F4CA8890087BF76 /* CollectionDataSource.swift in Sources */,
 				1AAE07E61F2BB471002E9670 /* ZShape.swift in Sources */,
 				1A0D77B61F4B4F37005FF908 /* AppRouter.swift in Sources */,

@@ -26,6 +26,16 @@ final class MenuViewController: UITableViewController {
         super.viewDidDisappear(animated)
         store.unsubscribe(self)
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var routeDestination: RoutingDestination = .game
+        switch (indexPath.row) {
+        case 0: routeDestination = .game
+        default:
+            break
+        }
+        store.dispatch(RoutingAction(destination: routeDestination))
+    }
 }
 
 // MARK: StoreSubscriber
