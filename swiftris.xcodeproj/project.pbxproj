@@ -129,7 +129,6 @@
 				1AC991D01F4C03030087BF76 /* Reducers */,
 				1AC991CF1F4C02FB0087BF76 /* Actions */,
 				1A3939FF1F2A5B040003B307 /* AppDelegate.swift */,
-				1A393A051F2A5B040003B307 /* GameScene.swift */,
 				1A393A091F2A5B040003B307 /* Main.storyboard */,
 				1A393A0C1F2A5B040003B307 /* Assets.xcassets */,
 				1A393A0E1F2A5B040003B307 /* LaunchScreen.storyboard */,
@@ -225,6 +224,7 @@
 		1AC991DB1F4CB1680087BF76 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1A393A051F2A5B040003B307 /* GameScene.swift */,
 				1AAE07E71F2BB80D002E9670 /* Swiftris.swift */,
 				1A393A321F2A66040003B307 /* Array2D.swift */,
 				1A393A341F2A6F730003B307 /* Bloc.swift */,

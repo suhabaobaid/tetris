@@ -6,13 +6,15 @@
 //  Copyright © 2017 Suha Baobaid. All rights reserved.
 //
 
-let NumColumns = 10
-let NumRows = 20
+import UIKit
+
+let NumColumns = Int(UIScreen.main.bounds.width / 32)
+let NumRows = Int(UIScreen.main.bounds.height / 28.4)
 
 let StartingColumn = 4
 let StartingRow = 2
 
-// This is the blocks preview position 
+// This is the blocks preview position
 let PreviewColumn = 12
 let PreviewRow = 2
 
@@ -41,7 +43,7 @@ class Swiftris {
         fallingShape = nil
         nextShape = nil
         blockArray = Array2D<Block>(columns: NumColumns, rows: NumRows)
-        
+
     }
     
     func beginGame() {

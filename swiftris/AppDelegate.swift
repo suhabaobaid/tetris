@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-		print(UIScreen.main.bounds)
         self.window = window
         window.makeKeyAndVisible()
         appRouter = AppRouter(window: window)
