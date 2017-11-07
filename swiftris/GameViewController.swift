@@ -44,7 +44,12 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         skView.presentScene(scene)
         
     }
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super .viewDidDisappear(animated)
+        swiftris.endGame()
+    }
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
