@@ -203,6 +203,16 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         })
     }
     
+    func animateOut() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.SubMenuView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+            self.SubMenuView.alpha = 0
+            self.VisualEffectView.effect = nil
+            }, completion: { (success: Bool) in
+                self.SubMenuView.removeFromSuperview()
+                })
+    }
+    
     @IBAction func showMenu(_ sender: Any) {
         swiftris.pauseGame()
         scene.stopTicking()
@@ -210,7 +220,8 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     }
     
     @IBAction func cancelMenu(_ sender: UIButton) {
-        gameDidBegin(swiftris: swiftris)
+        animateOut()
+        scene.startTicking()
     }
 }
 
