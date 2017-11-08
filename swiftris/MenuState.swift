@@ -13,6 +13,6 @@ struct MenuState: StateType {
     var menuTitles: [String]
     
     init() {
-        menuTitles = ["New Game", "Game Over"]
+        menuTitles = ["New Game", "Scores"]
     }
 }
