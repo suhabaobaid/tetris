@@ -18,6 +18,10 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     var panPointReference: CGPoint?
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
+    @IBOutlet var SubMenuView: UIView!
+    @IBOutlet weak var VisualEffectView: UIVisualEffectView!
+    
+    var effect: UIVisualEffect!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -25,6 +29,13 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //store the effect (blurring) and remove the effect in the beginning
+        effect = VisualEffectView.effect
+        VisualEffectView.effect = nil
+        
+        // set the radius of the view of the popup
+        SubMenuView.layer.cornerRadius = 5
         
         //configure the view - as! is a downcaster
         let skView = view as! SKView
@@ -176,6 +187,30 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     // #17
     func gameShapeDidMove(swiftris: Swiftris) {
         scene.redrawShape(shape: swiftris.fallingShape!) {}
+    }
+    
+    func animateIn() {
+        self.view.addSubview(SubMenuView)
+        SubMenuView.center = self.view.center
+        
+        SubMenuView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        SubMenuView.alpha = 0
+        
+        UIView.animate(withDuration: 0.4, animations: {
+            self.VisualEffectView.effect = self.effect
+            self.SubMenuView.alpha = 1
+            self.SubMenuView.transform = CGAffineTransform.identity
+        })
+    }
+    
+    @IBAction func showMenu(_ sender: Any) {
+        swiftris.pauseGame()
+        scene.stopTicking()
+        animateIn()
+    }
+    
+    @IBAction func cancelMenu(_ sender: UIButton) {
+        gameDidBegin(swiftris: swiftris)
     }
 }
 

@@ -273,4 +273,8 @@ class Swiftris {
         }
         return allBlocks
     }
+    
+    func pauseGame(){
+        print("Game is paused")
+    }
 }
