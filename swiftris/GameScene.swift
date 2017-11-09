@@ -26,7 +26,7 @@ class GameScene: SKScene {
     
     required init(coder aDecoder: NSCoder) {
         fatalError("NSCoder is not supported")
-    }
+    } 
     
     override init(size: CGSize) {
         super.init(size: size)
@@ -52,11 +52,11 @@ class GameScene: SKScene {
         
         gameLayer.addChild(shapeLayer)
         
-        run(SKAction.repeatForever(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: true)))
+        //run(SKAction.repeatForever(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: true)))
     }
     
     func playSound(sound:String) {
-        run(SKAction.playSoundFileNamed(sound, waitForCompletion: false))
+        //run(SKAction.playSoundFileNamed(sound, waitForCompletion: false))
         
     }
     
