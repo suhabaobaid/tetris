@@ -23,6 +23,8 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     
     var effect: UIVisualEffect!
     
+    let window = UIApplication.shared.keyWindow!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -190,7 +192,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     }
     
     func animateIn() {
-        self.view.addSubview(SubMenuView)
+        window.addSubview(SubMenuView)
         SubMenuView.center = self.view.center
         
         SubMenuView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
@@ -214,6 +216,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     }
     
     @IBAction func showMenu(_ sender: Any) {
+        self.view.isUserInteractionEnabled = false
         swiftris.pauseGame()
         scene.stopTicking()
         animateIn()
@@ -221,6 +224,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     
     @IBAction func cancelMenu(_ sender: UIButton) {
         animateOut()
+        self.view.isUserInteractionEnabled = true
         scene.startTicking()
     }
 }
