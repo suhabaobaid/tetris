@@ -31,7 +31,6 @@ final class MenuViewController: UITableViewController {
         var routeDestination: RoutingDestination = .menu
         switch (indexPath.row) {
         case 0: routeDestination = .game
-        case 1: routeDestination = .scoreBoard
         default:
             break
         }

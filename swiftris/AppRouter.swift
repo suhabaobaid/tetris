@@ -13,6 +13,7 @@ enum RoutingDestination: String {
     case menu = "MenuViewController"
     case game = "GameViewController"
     case scoreBoard = "ScoreViewController"
+    case start = "StartViewController"
 }
 
 final class AppRouter{

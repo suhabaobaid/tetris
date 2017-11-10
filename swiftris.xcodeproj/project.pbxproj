@@ -42,6 +42,7 @@
 		1AC991D61F4C05450087BF76 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D51F4C05450087BF76 /* TableDataSource.swift */; };
 		1AC991D81F4CA8890087BF76 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D71F4CA8890087BF76 /* CollectionDataSource.swift */; };
 		1AC991DA1F4CAA780087BF76 /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D91F4CAA780087BF76 /* RoutingAction.swift */; };
+		1AFD94021FB49D0900E8E8F9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD94011FB49D0900E8E8F9 /* StartViewController.swift */; };
 		74E167C53FDD7ACFB0E04B75 /* Pods_swiftris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		1AC991D51F4C05450087BF76 /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		1AC991D71F4CA8890087BF76 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		1AC991D91F4CAA780087BF76 /* RoutingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
+		1AFD94011FB49D0900E8E8F9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3E5EC2C90B93C3CD3822EC92 /* Pods-swiftris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.debug.xcconfig"; sourceTree = "<group>"; };
 		40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A455A87785218022008F2430 /* Pods-swiftris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				1A393A071F2A5B040003B307 /* GameViewController.swift */,
 				1A0D77BF1F4B5FEA005FF908 /* MenuViewController.swift */,
 				1A2FC4761FB2E78200AEB01D /* ScoreViewController.swift */,
+				1AFD94011FB49D0900E8E8F9 /* StartViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				1AAE07DA1F2B8647002E9670 /* SquareShape.swift in Sources */,
 				1A0D77BE1F4B5903005FF908 /* MenuReduer.swift in Sources */,
 				1A393A061F2A5B040003B307 /* GameScene.swift in Sources */,
+				1AFD94021FB49D0900E8E8F9 /* StartViewController.swift in Sources */,
 				1A2FC4771FB2E78200AEB01D /* ScoreViewController.swift in Sources */,
 				1A0D77BC1F4B58A0005FF908 /* MenuState.swift in Sources */,
 				1AAE07E21F2BB31E002E9670 /* JShape.swift in Sources */,
