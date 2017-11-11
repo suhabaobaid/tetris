@@ -12,6 +12,7 @@ import GameplayKit
 let TickLengthLevelOne = TimeInterval(600)
 let BlockSize: CGFloat = 20.0
 
+
 class GameScene: SKScene {
     
     var tick:(() -> ())?
