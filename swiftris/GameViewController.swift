@@ -21,12 +21,16 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     @IBOutlet var SubMenuView: UIView!
     @IBOutlet weak var VisualEffectView: UIVisualEffectView!
     
+    @IBOutlet weak var MenuButton: UIButton!
     var effect: UIVisualEffect!
     
     let window = UIApplication.shared.keyWindow!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupAnimationForNavigationBar(caseOfFunction: false, view: self)
+        
+        MenuButton.layer.cornerRadius = 6
         
     }
     override func viewDidLoad() {
@@ -209,6 +213,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         UIView.animate(withDuration: 0.3, animations: {
             self.SubMenuView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
             self.SubMenuView.alpha = 0
+            self.MenuButton.alpha = 1
             self.VisualEffectView.effect = nil
             }, completion: { (success: Bool) in
                 self.SubMenuView.removeFromSuperview()
@@ -217,6 +222,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     
     @IBAction func showMenu(_ sender: Any) {
         self.view.isUserInteractionEnabled = false
+        MenuButton.alpha = 0
         swiftris.pauseGame()
         scene.stopTicking()
         animateIn()

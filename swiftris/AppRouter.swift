@@ -10,9 +10,7 @@ import Foundation
 import ReSwift
 
 enum RoutingDestination: String {
-    case menu = "MenuViewController"
     case game = "GameViewController"
-    case scoreBoard = "ScoreViewController"
     case start = "StartViewController"
 }
 

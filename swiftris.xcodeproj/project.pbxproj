@@ -12,10 +12,6 @@
 		1A0D77B61F4B4F37005FF908 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D77B51F4B4F37005FF908 /* AppRouter.swift */; };
 		1A0D77B81F4B5049005FF908 /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D77B71F4B5049005FF908 /* RoutingState.swift */; };
 		1A0D77BA1F4B5136005FF908 /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D77B91F4B5136005FF908 /* RoutingReducer.swift */; };
-		1A0D77BC1F4B58A0005FF908 /* MenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D77BB1F4B58A0005FF908 /* MenuState.swift */; };
-		1A0D77BE1F4B5903005FF908 /* MenuReduer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D77BD1F4B5903005FF908 /* MenuReduer.swift */; };
-		1A0D77C01F4B5FEA005FF908 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0D77BF1F4B5FEA005FF908 /* MenuViewController.swift */; };
-		1A2FC4771FB2E78200AEB01D /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FC4761FB2E78200AEB01D /* ScoreViewController.swift */; };
 		1A393A001F2A5B040003B307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3939FF1F2A5B040003B307 /* AppDelegate.swift */; };
 		1A393A061F2A5B040003B307 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A393A051F2A5B040003B307 /* GameScene.swift */; };
 		1A393A081F2A5B040003B307 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A393A071F2A5B040003B307 /* GameViewController.swift */; };
@@ -31,6 +27,7 @@
 		1A393A331F2A66040003B307 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A393A321F2A66040003B307 /* Array2D.swift */; };
 		1A393A351F2A6F730003B307 /* Bloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A393A341F2A6F730003B307 /* Bloc.swift */; };
 		1A393A371F2A77DA0003B307 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A393A361F2A77DA0003B307 /* Shape.swift */; };
+		1A8555F41FB5D2B900B2DE94 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8555F31FB5D2B900B2DE94 /* Utils.swift */; };
 		1AAE07DA1F2B8647002E9670 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07D91F2B8647002E9670 /* SquareShape.swift */; };
 		1AAE07DC1F2BACE8002E9670 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07DB1F2BACE8002E9670 /* TShape.swift */; };
 		1AAE07DE1F2BB26F002E9670 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07DD1F2BB26F002E9670 /* LineShape.swift */; };
@@ -39,8 +36,6 @@
 		1AAE07E41F2BB36A002E9670 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07E31F2BB36A002E9670 /* SShape.swift */; };
 		1AAE07E61F2BB471002E9670 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07E51F2BB471002E9670 /* ZShape.swift */; };
 		1AAE07E81F2BB80D002E9670 /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE07E71F2BB80D002E9670 /* Swiftris.swift */; };
-		1AC991D61F4C05450087BF76 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D51F4C05450087BF76 /* TableDataSource.swift */; };
-		1AC991D81F4CA8890087BF76 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D71F4CA8890087BF76 /* CollectionDataSource.swift */; };
 		1AC991DA1F4CAA780087BF76 /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC991D91F4CAA780087BF76 /* RoutingAction.swift */; };
 		1AFD94021FB49D0900E8E8F9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD94011FB49D0900E8E8F9 /* StartViewController.swift */; };
 		74E167C53FDD7ACFB0E04B75 /* Pods_swiftris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D1DD7EEE61AFBC359CD7B4 /* Pods_swiftris.framework */; };
@@ -52,11 +47,7 @@
 		1A0D77B51F4B4F37005FF908 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		1A0D77B71F4B5049005FF908 /* RoutingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
 		1A0D77B91F4B5136005FF908 /* RoutingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoutingReducer.swift; path = ../RoutingReducer.swift; sourceTree = "<group>"; };
-		1A0D77BB1F4B58A0005FF908 /* MenuState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuState.swift; sourceTree = "<group>"; };
-		1A0D77BD1F4B5903005FF908 /* MenuReduer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuReduer.swift; sourceTree = "<group>"; };
-		1A0D77BF1F4B5FEA005FF908 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1A2F710E1F475D6000F991FC /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		1A2FC4761FB2E78200AEB01D /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		1A3939FC1F2A5B040003B307 /* swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3939FF1F2A5B040003B307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A393A051F2A5B040003B307 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -74,6 +65,7 @@
 		1A393A321F2A66040003B307 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		1A393A341F2A6F730003B307 /* Bloc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bloc.swift; sourceTree = "<group>"; };
 		1A393A361F2A77DA0003B307 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		1A8555F31FB5D2B900B2DE94 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1AAE07D91F2B8647002E9670 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
 		1AAE07DB1F2BACE8002E9670 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
 		1AAE07DD1F2BB26F002E9670 /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
@@ -82,8 +74,6 @@
 		1AAE07E31F2BB36A002E9670 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
 		1AAE07E51F2BB471002E9670 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
 		1AAE07E71F2BB80D002E9670 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
-		1AC991D51F4C05450087BF76 /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
-		1AC991D71F4CA8890087BF76 /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		1AC991D91F4CAA780087BF76 /* RoutingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
 		1AFD94011FB49D0900E8E8F9 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3E5EC2C90B93C3CD3822EC92 /* Pods-swiftris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftris/Pods-swiftris.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				1AC991DB1F4CB1680087BF76 /* Utils */,
-				1AC991D41F4C05320087BF76 /* DataSources */,
 				1AC991D31F4C03970087BF76 /* Shapes */,
 				1AC991D21F4C03740087BF76 /* ViewControllers */,
 				1AC991D11F4C03180087BF76 /* State */,
@@ -177,7 +166,6 @@
 			children = (
 				1A0D77B11F4B4D1E005FF908 /* AppReducer.swift */,
 				1A0D77B91F4B5136005FF908 /* RoutingReducer.swift */,
-				1A0D77BD1F4B5903005FF908 /* MenuReduer.swift */,
 			);
 			name = Reducers;
 			sourceTree = "<group>";
@@ -187,7 +175,6 @@
 			children = (
 				1A0D77B31F4B4DCD005FF908 /* AppState.swift */,
 				1A0D77B71F4B5049005FF908 /* RoutingState.swift */,
-				1A0D77BB1F4B58A0005FF908 /* MenuState.swift */,
 			);
 			name = State;
 			sourceTree = "<group>";
@@ -196,8 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				1A393A071F2A5B040003B307 /* GameViewController.swift */,
-				1A0D77BF1F4B5FEA005FF908 /* MenuViewController.swift */,
-				1A2FC4761FB2E78200AEB01D /* ScoreViewController.swift */,
 				1AFD94011FB49D0900E8E8F9 /* StartViewController.swift */,
 			);
 			name = ViewControllers;
@@ -218,15 +203,6 @@
 			name = Shapes;
 			sourceTree = "<group>";
 		};
-		1AC991D41F4C05320087BF76 /* DataSources */ = {
-			isa = PBXGroup;
-			children = (
-				1AC991D51F4C05450087BF76 /* TableDataSource.swift */,
-				1AC991D71F4CA8890087BF76 /* CollectionDataSource.swift */,
-			);
-			name = DataSources;
-			sourceTree = "<group>";
-		};
 		1AC991DB1F4CB1680087BF76 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +210,7 @@
 				1AAE07E71F2BB80D002E9670 /* Swiftris.swift */,
 				1A393A321F2A66040003B307 /* Array2D.swift */,
 				1A393A341F2A6F730003B307 /* Bloc.swift */,
+				1A8555F31FB5D2B900B2DE94 /* Utils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -395,27 +372,22 @@
 				1A0D77B81F4B5049005FF908 /* RoutingState.swift in Sources */,
 				1AAE07E01F2BB2EB002E9670 /* LShape.swift in Sources */,
 				1AAE07DA1F2B8647002E9670 /* SquareShape.swift in Sources */,
-				1A0D77BE1F4B5903005FF908 /* MenuReduer.swift in Sources */,
 				1A393A061F2A5B040003B307 /* GameScene.swift in Sources */,
 				1AFD94021FB49D0900E8E8F9 /* StartViewController.swift in Sources */,
-				1A2FC4771FB2E78200AEB01D /* ScoreViewController.swift in Sources */,
-				1A0D77BC1F4B58A0005FF908 /* MenuState.swift in Sources */,
 				1AAE07E21F2BB31E002E9670 /* JShape.swift in Sources */,
 				1AAE07E81F2BB80D002E9670 /* Swiftris.swift in Sources */,
+				1A8555F41FB5D2B900B2DE94 /* Utils.swift in Sources */,
 				1A393A371F2A77DA0003B307 /* Shape.swift in Sources */,
 				1A393A331F2A66040003B307 /* Array2D.swift in Sources */,
 				1AAE07DE1F2BB26F002E9670 /* LineShape.swift in Sources */,
 				1A0D77BA1F4B5136005FF908 /* RoutingReducer.swift in Sources */,
 				1AAE07E41F2BB36A002E9670 /* SShape.swift in Sources */,
-				1AC991D61F4C05450087BF76 /* TableDataSource.swift in Sources */,
 				1A0D77B21F4B4D1E005FF908 /* AppReducer.swift in Sources */,
 				1AAE07DC1F2BACE8002E9670 /* TShape.swift in Sources */,
-				1A0D77C01F4B5FEA005FF908 /* MenuViewController.swift in Sources */,
 				1A0D77B41F4B4DCD005FF908 /* AppState.swift in Sources */,
 				1A393A351F2A6F730003B307 /* Bloc.swift in Sources */,
 				1A393A081F2A5B040003B307 /* GameViewController.swift in Sources */,
 				1AC991DA1F4CAA780087BF76 /* RoutingAction.swift in Sources */,
-				1AC991D81F4CA8890087BF76 /* CollectionDataSource.swift in Sources */,
 				1AAE07E61F2BB471002E9670 /* ZShape.swift in Sources */,
 				1A0D77B61F4B4F37005FF908 /* AppRouter.swift in Sources */,
 				1A393A001F2A5B040003B307 /* AppDelegate.swift in Sources */,
