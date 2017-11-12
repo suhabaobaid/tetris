@@ -36,14 +36,9 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     
     // creates the button that's going to be used
     func addButton(){
-        let backButton = UIButton(type: .custom)
-        backButton.setTitle("Back", for: [])
-        backButton.setTitleColor(backButton.tintColor, for: []) // You can change the TitleColor
-        backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
-        
         // replacing the navigation bar back button with the new button that was created
-        
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+        let back = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(self.backAction(_:)))
+        self.navigationItem.leftBarButtonItem = back
     }
     
     override func viewDidLoad() {
