@@ -260,9 +260,9 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q27-Eb-9Au">
-                            <rect key="frame" x="117" y="102" width="48" height="30"/>
+                            <rect key="frame" x="114" y="102" width="55" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Cancel"/>
+                            <state key="normal" title="Resume"/>
                             <connections>
                                 <action selector="cancelMenu:" destination="BV1-FR-VrT" eventType="touchUpInside" id="SID-cZ-1ri"/>
                             </connections>

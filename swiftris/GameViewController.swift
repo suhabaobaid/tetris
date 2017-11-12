@@ -33,8 +33,25 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         MenuButton.layer.cornerRadius = 6
         
     }
+    
+    // creates the button that's going to be used
+    func addButton(){
+        let backButton = UIButton(type: .custom)
+        backButton.setTitle("Back", for: [])
+        backButton.setTitleColor(backButton.tintColor, for: []) // You can change the TitleColor
+        backButton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
+        
+        // replacing the navigation bar back button with the new button that was created
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // creating a back button
+        addButton()
+        
         
         //store the effect (blurring) and remove the effect in the beginning
         effect = VisualEffectView.effect
@@ -232,6 +249,13 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         animateOut()
         self.view.isUserInteractionEnabled = true
         scene.startTicking()
+    }
+    
+    
+    // function to go back to the main view controller
+    @IBAction func backAction(_ sender: UIButton){
+        animateOut()
+        let _ = self.navigationController?.popViewController(animated: true)
     }
 }
 

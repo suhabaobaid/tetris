@@ -20,6 +20,7 @@ final class AppRouter{
     init(window: UIWindow) {
         navigationController = UINavigationController()
         window.rootViewController = navigationController
+        
         store.subscribe(self){
             subscription in subscription.select {
                 state in state.routingState
