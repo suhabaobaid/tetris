@@ -252,5 +252,12 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         animateOut()
         let _ = self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func goToMainMenu(_ sender: UIButton) {
+        animateOut()
+        let routeDestination: RoutingDestination = .start
+        store.dispatch(RoutingAction(destination: routeDestination))
+    }
+    
 }
 

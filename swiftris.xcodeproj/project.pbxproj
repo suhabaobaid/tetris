@@ -129,7 +129,6 @@
 				1A393A231F2A5EB70003B307 /* Sprites.atlas */,
 				1A393A181F2A5E910003B307 /* Sounds */,
 				1A393A171F2A5DF40003B307 /* Supporting Files */,
-				1A0D77B51F4B4F37005FF908 /* AppRouter.swift */,
 			);
 			path = swiftris;
 			sourceTree = "<group>";
@@ -206,6 +205,7 @@
 		1AC991DB1F4CB1680087BF76 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1A0D77B51F4B4F37005FF908 /* AppRouter.swift */,
 				1A393A051F2A5B040003B307 /* GameScene.swift */,
 				1AAE07E71F2BB80D002E9670 /* Swiftris.swift */,
 				1A393A321F2A66040003B307 /* Array2D.swift */,

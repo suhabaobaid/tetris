@@ -13,7 +13,7 @@ import UIKit
 final class StartViewController: UIViewController {
     
     @IBOutlet weak var startGameButton: UIButton!
-    
+ 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -21,6 +21,7 @@ final class StartViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
         startGameButton.layer.cornerRadius = 4
+
     }
     
     override func viewDidLoad() {
