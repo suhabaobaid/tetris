@@ -74,8 +74,7 @@ open class Store<State: StateType>: StoreType {
 
     open func subscribe<SelectedState, S: StoreSubscriber>(
         _ subscriber: S, transform: ((Subscription<State>) -> Subscription<SelectedState>)?
-    ) where S.StoreSubscriberStateType == SelectedState
-    {
+    ) where S.StoreSubscriberStateType == SelectedState {
         // If the same subscriber is already registered with the store, replace the existing
         // subscription with the new one.
         if let index = subscriptions.index(where: { $0.subscriber === subscriber }) {

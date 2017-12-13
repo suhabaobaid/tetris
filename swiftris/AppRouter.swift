@@ -6,7 +6,6 @@
 //  Copyright © 2017 Suha Baobaid. All rights reserved.
 //
 
-
 /*
  * Class that react to changes of the routingState value and show the current destination on the screen
  */
@@ -20,7 +19,7 @@ enum RoutingDestination: String {
     case start = "StartViewController"
 }
 
-final class AppRouter{
+final class AppRouter {
     let navigationController: UINavigationController
     
     // Subscribes to the global store for the routing state only
@@ -28,7 +27,7 @@ final class AppRouter{
         navigationController = UINavigationController()
         window.rootViewController = navigationController
         
-        store.subscribe(self){
+        store.subscribe(self) {
             subscription in subscription.select {
                 state in state.routingState
             }

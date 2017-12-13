@@ -35,7 +35,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     }
     
     // creates the button that's going to be used
-    func addButton(){
+    func addButton() {
         // replacing the navigation bar back button with the new button that was created
         let back = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(self.backAction(_:)))
         self.navigationItem.leftBarButtonItem = back
@@ -46,7 +46,6 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         
         // creating a back button
         addButton()
-        
         
         //store the effect (blurring) and remove the effect in the beginning
         effect = VisualEffectView.effect
@@ -103,7 +102,6 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     @IBAction func didTap(_ sender: UITapGestureRecognizer) {
         swiftris.rotateShape()
     }
-    
     
     @IBAction func didSwipe(_ sender: UISwipeGestureRecognizer) {
         swiftris.dropShape()
@@ -192,7 +190,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         let removedLines = swiftris.removeCompleteLines()
         if removedLines.linesRemoved.count > 0 {
             self.scoreLabel.text = "\(swiftris.score)"
-            scene.animateCollapsingLines(linesToRemove: removedLines.linesRemoved, fallenBlocks: removedLines.fallenBlocks){
+            scene.animateCollapsingLines(linesToRemove: removedLines.linesRemoved, fallenBlocks: removedLines.fallenBlocks) {
                 // #11
                 self.gameShapeDidLand(swiftris: swiftris)
             }
@@ -246,11 +244,10 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         scene.startTicking()
     }
     
-    
     // function to go back to the main view controller
-    @IBAction func backAction(_ sender: UIButton){
+    @IBAction func backAction(_ sender: UIButton) {
         animateOut()
-        let _ = self.navigationController?.popViewController(animated: true)
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func goToMainMenu(_ sender: UIButton) {
@@ -260,4 +257,3 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     }
     
 }
-

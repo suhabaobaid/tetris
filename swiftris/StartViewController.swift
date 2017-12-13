@@ -9,7 +9,6 @@
 import ReSwift
 import UIKit
 
-
 final class StartViewController: UIViewController {
     
     @IBOutlet weak var startGameButton: UIButton!
@@ -42,6 +41,3 @@ final class StartViewController: UIViewController {
     }
     
 }
-
-
-

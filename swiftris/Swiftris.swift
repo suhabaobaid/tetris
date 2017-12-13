@@ -47,13 +47,13 @@ class Swiftris {
     }
     
     func beginGame() {
-        if(nextShape == nil) {
+        if nextShape == nil {
             nextShape = Shape.random(startingColumn: PreviewColumn, startingRow: PreviewRow)
         }
         delegate?.gameDidBegin(swiftris: self)
     }
     
-    func newShape() -> (fallingShape: Shape?, nextShape: Shape?){
+    func newShape() -> (fallingShape: Shape?, nextShape: Shape?) {
         fallingShape = nextShape
         
         nextShape = Shape.random(startingColumn: PreviewColumn, startingRow: PreviewRow)
@@ -195,8 +195,7 @@ class Swiftris {
         delegate?.gameDidEnd(swiftris: self)
     }
     
-    func removeCompleteLines() -> (linesRemoved: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>)
-    {
+    func removeCompleteLines() -> (linesRemoved: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>) {
         var removedLines = Array<Array<Block>>()
         
         for row in (1..<NumRows).reversed() {
@@ -274,7 +273,7 @@ class Swiftris {
         return allBlocks
     }
     
-    func pauseGame(){
+    func pauseGame() {
         print("Game is paused")
     }
 }

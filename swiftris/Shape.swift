@@ -69,7 +69,6 @@ class Shape: Hashable, CustomStringConvertible {
         return [:]
     }
     
-    
     var bottomBlocks: Array<Block> {
         guard let bottomBlocks = bottomBlocksForOrientations[orientation] else {
             return []
@@ -84,24 +83,23 @@ class Shape: Hashable, CustomStringConvertible {
         return "\(color) block facing \(orientation): \(blocks[FirstBlockIdx]), \(blocks[SecondBlockIdx]), \(blocks[ThirdBlockIdx]), \(blocks[FourthBlockIdx])"
     }
     
-    init(column: Int, row:Int, color: BlockColor, orientation: Orientation) {
+    init(column: Int, row: Int, color: BlockColor, orientation: Orientation) {
         self.color = color
         self.column = column
         self.row = row
         self.orientation = orientation
         initializeBlocks()
     }
-    convenience init(column: Int, row:Int) {
+    convenience init(column: Int, row: Int) {
         self.init(column: column, row: row, color: BlockColor.random(), orientation: Orientation.random())
     }
-    
     
     final func initializeBlocks() {
         guard let blockRowColumnTranslations = blockRowColumnPositions[orientation] else {
             return
         }
         
-        blocks = blockRowColumnTranslations.map{ (diff) -> Block in
+        blocks = blockRowColumnTranslations.map { (diff) -> Block in
             return Block(column: column + diff.columnDiff, row: row + diff.rowDiff, color: color)
         }
     }
@@ -181,6 +179,6 @@ class Shape: Hashable, CustomStringConvertible {
     
 }
 
-func ==(lhs: Shape, rhs: Shape) -> Bool {
+func == (lhs: Shape, rhs: Shape) -> Bool {
     return lhs.row == rhs.row && lhs.column == rhs.column
 }

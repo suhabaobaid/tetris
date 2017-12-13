@@ -1,0 +1,15 @@
+disabled_rules: # the rules in the default set but it is needed to be enabled
+  - trailing_whitespace
+  - identifier_name
+  - syntactic_sugar
+  - cyclomatic_complexity
+  - class_delegate_protocol
+  - weak_delegate
+  - unused_closure_parameter
+  - force_cast
+  - closure_parameter_position
+line_length: 180
+included: # paths to include during linting. `--path` is ignored if present.
+  - swiftris
+excluded:
+  - Pods

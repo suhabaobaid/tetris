@@ -12,16 +12,15 @@ import GameplayKit
 let TickLengthLevelOne = TimeInterval(600)
 let BlockSize: CGFloat = 20.0
 
-
 class GameScene: SKScene {
     
-    var tick:(() -> ())?
+    var tick:(() -> Void)?
     var tickLengthMillis = TickLengthLevelOne
     var lastTick: NSDate?
     
     let gameLayer = SKNode()
     let shapeLayer = SKNode()
-    let LayerPosition = CGPoint(x: 6, y:-6)
+    let LayerPosition = CGPoint(x: 6, y: -6)
     
     var textureCache = Dictionary<String, SKTexture>()
     
@@ -56,7 +55,7 @@ class GameScene: SKScene {
         //run(SKAction.repeatForever(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: true)))
     }
     
-    func playSound(sound:String) {
+    func playSound(sound: String) {
         //run(SKAction.playSoundFileNamed(sound, waitForCompletion: false))
         
     }
@@ -90,7 +89,7 @@ class GameScene: SKScene {
         return CGPoint(x: x, y: y)
     }
     
-    func addPreviewShapeToScene(shape: Shape, completion: @escaping () -> ()) {
+    func addPreviewShapeToScene(shape: Shape, completion: @escaping () -> Void) {
         for block in shape.blocks {
             var texture = textureCache[block.spriteName]
             
@@ -118,7 +117,7 @@ class GameScene: SKScene {
         run(SKAction.wait(forDuration: 0.4), completion: completion)
     }
     
-    func movePreviewShape(shape: Shape, completion: @escaping () -> ()) {
+    func movePreviewShape(shape: Shape, completion: @escaping () -> Void) {
         for block in shape.blocks {
             let sprite = block.sprite!
             let moveTo = pointForColumn(column: block.column, row: block.row)
@@ -131,7 +130,7 @@ class GameScene: SKScene {
         run(SKAction.wait(forDuration: 0.2), completion: completion)
     }
     
-    func redrawShape(shape: Shape, completion: @escaping () -> ()) {
+    func redrawShape(shape: Shape, completion: @escaping () -> Void) {
         for block in shape.blocks {
             let sprite = block.sprite!
             let moveTo = pointForColumn(column: block.column, row: block.row)
@@ -147,7 +146,7 @@ class GameScene: SKScene {
         }
     }
     
-    func animateCollapsingLines(linesToRemove: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>, completion:@escaping () -> ()) {
+    func animateCollapsingLines(linesToRemove: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>, completion:@escaping () -> Void) {
         var longestDuration: TimeInterval = 0
         // #2
         for (columnIdx, column) in fallenBlocks.enumerated() {
@@ -197,6 +196,6 @@ class GameScene: SKScene {
             }
         }
         // #7
-        run(SKAction.wait(forDuration: longestDuration), completion:completion)
+        run(SKAction.wait(forDuration: longestDuration), completion: completion)
     }
 }
