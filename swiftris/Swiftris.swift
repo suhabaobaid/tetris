@@ -6,17 +6,20 @@
 //  Copyright © 2017 Suha Baobaid. All rights reserved.
 //
 
-let NumColumns = 10
-let NumRows = 20
+import UIKit
+
+let NumColumns = Int(UIScreen.main.bounds.width / 32)
+let NumRows = Int(UIScreen.main.bounds.height / 28.4)
 
 let StartingColumn = 4
 let StartingRow = 2
 
+// This is the blocks preview position
 let PreviewColumn = 12
-let PreviewRow = 1
+let PreviewRow = 2
 
 let PointsPerLine = 10
-let LevelThreshold = 500
+let LevelThreshold = 100
 
 protocol SwiftrisDelegate {
     func gameDidEnd(swiftris: Swiftris)
@@ -40,17 +43,17 @@ class Swiftris {
         fallingShape = nil
         nextShape = nil
         blockArray = Array2D<Block>(columns: NumColumns, rows: NumRows)
-        
+
     }
     
     func beginGame() {
-        if(nextShape == nil) {
+        if nextShape == nil {
             nextShape = Shape.random(startingColumn: PreviewColumn, startingRow: PreviewRow)
         }
         delegate?.gameDidBegin(swiftris: self)
     }
     
-    func newShape() -> (fallingShape: Shape?, nextShape: Shape?){
+    func newShape() -> (fallingShape: Shape?, nextShape: Shape?) {
         fallingShape = nextShape
         
         nextShape = Shape.random(startingColumn: PreviewColumn, startingRow: PreviewRow)
@@ -192,8 +195,7 @@ class Swiftris {
         delegate?.gameDidEnd(swiftris: self)
     }
     
-    func removeCompleteLines() -> (linesRemoved: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>)
-    {
+    func removeCompleteLines() -> (linesRemoved: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>) {
         var removedLines = Array<Array<Block>>()
         
         for row in (1..<NumRows).reversed() {
@@ -269,5 +271,9 @@ class Swiftris {
             allBlocks.append(rowOfBlocks)
         }
         return allBlocks
+    }
+    
+    func pauseGame() {
+        print("Game is paused")
     }
 }

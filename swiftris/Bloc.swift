@@ -60,13 +60,13 @@ class Block: Hashable, CustomStringConvertible {
         return "\(color): [\(column), \(row)]"
     }
 
-    init(column: Int, row: Int, color:BlockColor) {
+    init(column: Int, row: Int, color: BlockColor) {
         self.column = column
         self.row = row
         self.color = color
     }
 }
 
-func ==(lhs: Block, rhs: Block) -> Bool {
+func == (lhs: Block, rhs: Block) -> Bool {
     return lhs.column == rhs.column && lhs.row == rhs.row && lhs.color.rawValue == rhs.color.rawValue
 }

@@ -5,7 +5,6 @@
 //  Created by Suha Baobaid on 27/07/2017.
 //  Copyright © 2017 Suha Baobaid. All rights reserved.
 
-
 class Array2D <T> {
     
     let columns: Int
@@ -25,7 +24,7 @@ class Array2D <T> {
             return array[(row * columns) + column]
         }
         
-        set(newValue){
+        set(newValue) {
             array[(row * columns) + column] = newValue
         }
     }

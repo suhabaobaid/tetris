@@ -12,7 +12,7 @@ import ReSwift
 struct RoutingState: StateType {
     var navigationState: RoutingDestination
     
-    init(navigationState: RoutingDestination = .menu) {
+    init(navigationState: RoutingDestination = .start) {
         self.navigationState = navigationState
     }
 }
